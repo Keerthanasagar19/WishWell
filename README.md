@@ -57,8 +57,15 @@ WishWell/
 ├── ngo-submit.html
 └── README.md
 
+## 📷 Screenshots
 
----
+- ![Home Page](./screenshots/home.png)
+- ![Submit Wish Page](./screenshots/submit-wish.png)
+- ![View Wishes Page](./screenshots/wishes.png)
+- ![Admin Dashboard](./screenshots/admin.png)
+- ![Admin Analytics](./screenshots/admin-analytics.png)
+- ![NGO Submit Wish](./screenshots/ngo-wish.png)
+
 
 ## 🚀 How to Run Locally
 
