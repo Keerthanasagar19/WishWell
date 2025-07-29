@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Analytics - WishWell</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <h1>📊 Analytics Dashboard</h1>
+  
+  <div style="width: 300px; margin-bottom: 30px;">
+    <canvas id="wishStatsChart"></canvas>
+  </div>
+
+  <div style="width: 400px;">
+    <canvas id="topContributorsChart"></canvas>
+  </div>
+
+  <script type="module" src="js/admin-analytics.js"></script>
+</body>
+</html>
