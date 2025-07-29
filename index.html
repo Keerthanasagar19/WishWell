@@ -6,9 +6,28 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Welcome to WishWell</h1>
-  <p>This is your first HTML page!</p>
+  
 
-  <script src="js/script.js"></script>
+  <!-- Navigation Bar -->
+  <nav style="background-color: #4CAF50; padding: 10px;">
+    <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">🏠 Home</a>
+    <a href="how-it-works.html" style="color: white; margin-right: 20px; text-decoration: none;">❓ How It Works</a>
+    <a href="submit-wish.html" style="color: white; margin-right: 20px; text-decoration: none;">🎁 Submit Wish</a>
+    <a href="wishes.html" style="color: white; margin-right: 20px; text-decoration: none;">👀 View Wishes</a>
+    <a href="login.html" style="color: white; text-decoration: none;">🚪 Logout</a>
+  </nav>
+
+  <h1>Welcome to WishWell</h1>
+
+  <!-- Wish List Display Area -->
+  <ul id="wishList"></ul>
+  <h2>💬 Thank You Messages</h2>
+<ul id="thankYouList"></ul>
+
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/thankyou.js"></script>
+
 </body>
 </html>
+
