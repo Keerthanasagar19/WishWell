@@ -1,5 +1,157 @@
-/* Main styles for WishWell */
+/* General Page Styling */
 body {
-  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
 }
-add style.css
+
+/* Headings */
+h1, h2 {
+  color: #4CAF50;
+}
+
+h3 {
+  color: #333;
+  margin-top: 25px;
+}
+
+/* Input Fields & Buttons */
+input, button {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 80%;
+  max-width: 300px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #4CAF50;
+  padding: 12px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #4CAF50;
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  color: #4CAF50;
+  margin: 0 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Wish Card Style */
+#wishList div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* How It Works Page */
+ol, ul {
+  margin-left: 25px;
+  text-align: left;
+}
+
+ol li, ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Centered Content Box */
+div.content-box {
+  padding: 25px;
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+#thankYouList {
+  list-style: none;
+  padding-left: 0;
+}
+
+#thankYouList li {
+  background: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-left: 5px solid #4CAF50;
+  border-radius: 5px;
+}
+form {
+  max-width: 600px;
+  margin: auto;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #ccc;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
