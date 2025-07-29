@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NGO Wish Submission - WishWell</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>🧾 NGO Registration & Wish Submission</h2>
+  <form id="ngoForm">
+    <input type="text" id="ngoName" placeholder="NGO Name" required /><br />
+    <input type="email" id="ngoEmail" placeholder="NGO Email" required /><br />
+    <input type="text" id="ngoContact" placeholder="Contact Number" required /><br />
+    <textarea id="ngoAddress" placeholder="Address" required></textarea><br />
+
+    <hr />
+    <h3>🎁 Submit Wishes</h3>
+    <div id="wishContainer">
+      <div class="wishItem">
+        <input type="text" placeholder="Beneficiary Name" class="bName" required />
+        <input type="number" placeholder="Age" class="bAge" required />
+        <input type="text" placeholder="Location" class="bLocation" required />
+        <input type="text" placeholder="Wish Description" class="bWish" required />
+        <input type="date" class="bDeadline" required />
+        <hr />
+      </div>
+    </div>
+
+    <button type="button" onclick="addWishInput()">➕ Add Another Wish</button><br><br>
+    <button type="submit">📩 Submit Wishes</button>
+  </form>
+
+  <script type="module" src="js/ngo-submit.js"></script>
+</body>
+</html>
