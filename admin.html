@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard - WishWell</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+    <nav>
+  <ul>
+    <li><a href="admin.html">🏠 Admin Home</a></li>
+    <li><a href="admin-analytics.html">📈 Analytics Dashboard</a></li>
+    <!-- Add more links here -->
+  </ul>
+</nav>
+<a href="admin-analytics.html">
+  <button style="background-color: #2196F3; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer;">
+    📊 Open Analytics Dashboard
+  </button>
+</a>
+  <h1>Admin Dashboard</h1>
+  <!-- Place near the top inside <body> -->
+<a href="admin-analytics.html" style="text-decoration: none; font-weight: bold; background-color: #4CAF50; color: white; padding: 10px 15px; border-radius: 5px;">📈 View Analytics Dashboard</a>
+
+
+  <div style="margin: 20px 0;">
+    <input type="text" id="searchInput" placeholder="Search by name or location" style="padding: 5px; width: 250px;" />
+    <select id="statusFilter" style="padding: 5px;">
+      <option value="all">All</option>
+      <option value="fulfilled">Fulfilled</option>
+      <option value="unfulfilled">Unfulfilled</option>
+    </select>
+  </div>
+
+  <ul id="adminWishList"></ul>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
