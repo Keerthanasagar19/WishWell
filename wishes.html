@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Wishes - WishWell</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav style="background-color: #4CAF50; padding: 10px;">
+    <a href="index.html" data-i18n="home">🏠 Home</a>
+<a href="submit-wish.html" data-i18n="submitWish">🎁 Submit Wish</a>
+<a href="wishes.html" data-i18n="viewWishes">👀 View Wishes</a>
+<a href="login.html" data-i18n="logout">🚪 Logout</a>
+
+  </nav>
+
+  <h2>🌟 Wishes from Users</h2>
+  <div style="margin: 20px 0;">
+  <input type="text" id="searchInput" placeholder="Search by name or location" style="padding: 5px; width: 250px;" />
+  
+  <select id="statusFilter" style="padding: 5px;">
+    <option value="all">All</option>
+    <option value="fulfilled">Fulfilled</option>
+    <option value="unfulfilled">Unfulfilled</option>
+  </select>
+</div>
+
+  <ul id="wishList">
+    <!-- Wishes will appear here -->
+  </ul>
+
+  <script type="module" src="js/view-wishes.js"></script>
+</body>
+</html>
