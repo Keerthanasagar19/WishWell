@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WishWell - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+
+</head>
+<body>
+  <h2>WishWell Login</h2>
+
+  <input type="email" id="email" placeholder="Email" required><br><br>
+  <input type="password" id="password" placeholder="Password" required><br><br>
+
+  <button onclick="login()">Login</button>
+  <button onclick="signup()">Sign Up</button>
+
+  <p id="message"></p>
+
+  <!-- Firebase + Auth logic -->
+  <script type="module">
+    import { auth } from './firebase/firebase-config.js';
+    import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const message = document.getElementById('message');
+
+    window.signup = async () => {
+      try {
+        const userCredential = await createUserWithEmailAndPassword(auth, emailInput.value, passwordInput.value);
+        message.innerText = "Signup successful ✅";
+      } catch (error) {
+        message.innerText = "❌ " + error.message;
+      }
+    };
+
+    window.login = async () => {
+      try {
+        const userCredential = await signInWithEmailAndPassword(auth, emailInput.value, passwordInput.value);
+        message.innerText = "Login successful ✅";
+        // Redirect to main page
+        window.location.href = "index.html";
+      } catch (error) {
+        message.innerText = "❌ " + error.message;
+      }
+    };
+  </script>
+</body>
+</html>
